@@ -1,0 +1,120 @@
+.project-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-section__title{
+    margin-top: 150px;
+}
+
+.project-section__article{
+    margin: 50px 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-section__article__image{
+    width: 500px;
+    height: 500px;
+    opacity: 0.8;
+    transition: 0.2s;
+    box-shadow: 1px 1px 5px 1px #555;
+}
+
+.project-section__article__image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.project-section__article__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.project-section__article__text h2{
+    margin-bottom : 30px;
+}
+
+.project-section__article__text p{
+    margin-bottom : 30px;
+    text-align: justify;
+}
+
+.article-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.article-nav a{
+    padding: 5px;
+    margin-right: 50px;
+    color: #000;
+}
+
+.article-nav a:hover {
+    margin-right: 50px;
+    color: #00BCD4;
+    border-bottom: 2px solid #00BCD4;
+}
+
+.project-section__article__image:hover{
+    opacity : 1;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px #555;
+}
+
+@media screen and (max-width: 1500px) {
+    .project-section__article{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .project-section__article__image{
+        margin-bottom: 25px;
+    }
+
+    .project-section__article{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .project-section__article__text{
+        width: 90%;
+        text-align: center;
+    }
+
+    .project-section__article__text p{
+        text-align: center;
+    }
+
+    .article-nav {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .project-section__article__image{
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+}
+

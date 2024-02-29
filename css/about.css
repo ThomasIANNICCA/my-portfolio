@@ -1,0 +1,246 @@
+.about-section{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section, .about-section__container, .about-section__diplomas, .about-section__skills, .about-section__skills__content article, .about-section__experiences, .about-section__experiences__articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-section__title{
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.about-section__container{
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------PRESENTATION------------------*/
+.about-section__presentation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin : 10px 0;
+    width: 75%;
+}
+
+.presentation__image{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 50px 0;
+}
+
+.presentation__image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.presentation__description{
+    width: 50%;
+    text-align: justify;
+}
+
+.about-section__diplomas__title h2, .about-section__skills__title h2, .about-section__experiences__title h2{
+    font-size: 3rem;
+}
+
+.presentation h3, .about-section__diplomas__articles h3, .skills-title h3, .article-item__title h3{
+    font-size: 1.5rem;
+}
+
+.presentation h3{
+    text-align: center;
+    font-weight: normal;
+}
+
+.presentation p{
+    font-size: 1rem;
+}
+
+.about-section__diplomas__title, .about-section__skills__title, .about-section__experiences__title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/*------------------------------ FORMATION -------------------------*/
+.about-section__diplomas{
+    margin: 50px 0;
+    width: 75%;
+}
+
+.about-section__diplomas__articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about-section__diplomas article{
+    margin : 30px;
+}
+
+/*-------------------------- SKILLS ------------------------------------*/
+
+.about-section__skills, .about-section__experiences{
+    margin: 50px 0 ;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.about-section__skills__content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.about-section__skills__content article {
+    box-shadow:  1px 1px 3px #555;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+    min-height: 200px;
+}
+
+.skills-description{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-description ul{
+    list-style-type: none;
+}
+
+/*---------------------------- EXPERIENCES --------------------------*/
+
+.about-section__experiences__articles{
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-section__experiences__articles article{
+    box-shadow:  1px 1px 3px #555;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.article-item__title{
+    width: 40%;
+}
+
+.article-item__description{
+    text-align: justify;
+    width: 60%;
+}
+
+@media screen and (max-width: 1410px){
+    .about-section__presentation {
+        flex-direction: column;
+    }
+
+    .presentation__description{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .about-section__title h1{
+        font-size: 2rem ;
+    }
+    
+    .about-section__skills, .about-section__experiences, .about-section__diplomas, .about-section__presentation{
+        width: 90%;
+    }
+
+    .about-section__diplomas__title h2, .about-section__skills__title h2, .about-section__experiences__title h2{
+        font-size: 2rem;
+    }
+
+    .presentation__image{
+        height: 300px;
+        width: 300px;
+    }
+    
+
+    /*---------------FORMATION--------------*/
+    .about-section__diplomas{
+        width: 90%;
+    }
+    
+    .about-section__diplomas__articles{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*---------------SKILLS--------------*/
+    .about-section__skills__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .about-section__skills__content article{
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-section__skills__content article h3{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .skills-description{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-description ul{
+        text-align: center;
+    }
+
+/*---------------EXPERIENCES--------------*/
+
+    .about-section__experiences__articles article{
+        flex-direction: column;
+    }
+
+    .article-item__title{
+        width: 100%;
+        border-bottom: 1px solid #555;
+        text-align: center;
+    }
+    
+    .article-item__description{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .presentation__image{
+        height: 250px;
+        width: 250px;
+    }
+}
