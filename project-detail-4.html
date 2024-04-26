@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/project-detail.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -29,36 +29,32 @@
     </header>
 
     <section class="project-section">
+
         <div class="project-section__title">
-            <h1>Projets<span class="blue-color">.</span></h1>
+            <h1>Github Search Engine<span class="blue-color">.</span></h1>
         </div>
+        
+        <div class="project-section__article">
 
-        <div class="project-section__container">
-            <a href="./project-detail.html">
-                <div class="project-section__article">
-                    <img src="./images/my-oclock-list.png" alt="Image du projet My Oclock List">
-                </div>
-            </a>
-
-            <a href="./project-detail-2.html">
-                <div class="project-section__article">
-                    <img src="./images/formula-one.png" alt="Image du projet My Oclock List">
-                </div>
-            </a>
-
-            <a href="./project-detail-3.html">
-                <div class="project-section__article">
-                    <img src="./images/burger-lillois.jpeg" alt="Image du projet Burger Lillois">
-                </div>
-            </a>
-
-            <a href="./project-detail-4.html">
-                <div class="project-section__article">
+            <a href="https://github.com/ThomasIANNICCA/github-repo-search-engine">
+                <div class="project-section__article__image">
                     <img src="./images/github-search-engine.jpeg" alt="Image du projet Moteur de recherche Github">
                 </div>
             </a>
+
+            <div class="project-section__article__text">
+                <h2>Présentation</h2>
+                <p>Ce projet est un moteur de recherche permettant de trouver des repositories GitHub en fonction du langage recherché. Les repositories sont générés grâce à des appels vers l'API Github. Le projet propose également une FAQ expliquant son fonctionnement.</p>
+                <p>React SASS Axios Semantic UI</p>
+                <div class="article-nav">
+                    <a href="https://github.com/ThomasIANNICCA/github-repo-search-engine">Voir le projet</a>
+                    <a href="./projects.html">Retour</a>
+                </div>
+            </div>
+
         </div>
+        <script src="script.js"></script>
+
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
